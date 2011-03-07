@@ -39,11 +39,7 @@ Documentation:
 	
 		Provides a commented stub for a theme set up function.
 		Fixes a problem in Twenty Ten Five 1.0 where images inside captions don't have their alignment
-		class assigned.
-	
-	images/favicon.ico:
-	
-		This is a piddmedia icon. Replace this with your own favicon.ico file.
+		class assigned.	
 	
 	screenshot.png
 	
