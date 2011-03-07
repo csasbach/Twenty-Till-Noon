@@ -1,0 +1,674 @@
+/*
+Theme Name: Twenty Till Noon
+Theme URI: http://piddmedia.com/
+Description: Twenty Till Noon uses the <a href ="http://cssgrid.net/">1140 Grid</a> layout by <a href="http://www.andytlr.com/">Andy Taylor</a>. Twenty Till Noon is a child theme of <a href="http://www.twentytenfive.com/">Twenty Ten Five</a> by <a href="http://www.richardshepherd.com/">Richard Shepherd</a>. The Twenty Ten Five theme is based on the <a href="http://2010dev.wordpress.com/">Twenty Ten</a> theme from the WordPress team. A special thanks to Andy, Richard, and the people at WordPress for their generous contributions to the design community.
+Author: C. Scott Asbach
+Author URI: http://piddmedia.com/
+Version: 0.0
+Tags: black, blue, white, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+Template: richardshepherd-TwentyTenFive-7df7ded
+Template Version: 1.0
+*/
+
+@import url('../richardshepherd-TwentyTenFive-7df7ded/style.css');
+
+/* RESET TWENTY TEN LAYOUT AND STRUCTURE: */
+
+/**
+ * Reset all of the layout and structural styles from Twenty Ten Five
+ * so we can let 1140 Grid styles handle layout and structure instead.
+ */
+#main {
+	width:auto;
+}
+
+#container {
+	float: none;
+	margin:0;
+	width: auto;
+}
+#content {
+	margin:0 0 0 20px;
+}
+#primary,
+#secondary {
+	float: none;
+	overflow: hidden;
+	width: auto;
+}
+#secondary {
+	clear: none;
+}
+#footer {	
+	width: auto;
+}
+
+nav#access .menu-header,
+div.menu,
+#colophon,
+#branding,
+#main,
+#wrapper {	
+	width: auto;
+}
+#footer-widget-area .widget-area {
+	float: none;	
+	width: auto;
+}
+nav#access {	
+	width: auto;
+}
+nav .menu-header,
+div.menu {	
+	width: auto;
+}
+/* END RESET TWENTY TEN LAYOUT AND STRUCTURE */
+
+/* 1140 GRID: */
+
+/**
+ * The 1140px Grid by Andy Taylor
+ * http://cssgrid.net
+ * http://www.twitter.com/andytlr
+ * http://www.catchingzebra.com
+ *
+ * Rather than alter other parts of the theme
+ * I chose to insert Twenty Ten Five selectors
+ * into the 1140 Grid CSS where needed to achieve
+ * the desired layout.
+ */
+#wrapper,
+header,
+#main,
+#footer-widget-area {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+#wrapper,
+#masthead,
+#main,
+#footer-widget-area {
+width: 100%;
+max-width: 1140px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+#branding,
+nav#access,
+#container,
+#primary,
+#secondary,
+#footer-widget-area aside#first,
+#footer-widget-area aside#second,
+#footer-widget-area aside#third,
+#footer-widget-area aside#fourth,
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+margin-right: 3.8%;
+float: left;
+}
+
+.onecol {
+width: 4.85%;
+}
+
+.twocol {
+width: 13.5%;
+}
+
+#footer-widget-area aside#first,
+#footer-widget-area aside#second,
+#footer-widget-area aside#third,
+#footer-widget-area aside#fourth,
+.threecol {
+width: 22.15%;
+}
+
+.fourcol {
+width: 30.8%;
+}
+
+#primary,
+.fivecol {
+width: 39.45%;
+}
+
+.sixcol {
+width: 48.1%;
+}
+
+#container,
+.sevencol {
+width: 56.75%;
+}
+
+.eightcol {
+width: 65.4%;
+}
+
+.ninecol {
+width: 74.05%;
+}
+
+.tencol {
+width: 82.7%;
+}
+
+.elevencol {
+width: 91.35%;
+}
+
+#branding,
+nav#access,
+#secondary,
+.twelvecol {
+width: 100%;
+float: left;
+}
+
+#branding,
+nav#access,
+#primary,
+#secondary,
+#footer-widget-area aside#fourth,
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+/* END 1140 GRID */
+
+/* BASELINE COLORS USING TWENTY TEN COLORS: */
+
+/**
+ * Some styles are added to spruce up the look of
+ * Twenty Ten with CSS3 corners and shadows.
+ * These are the background colors for those elements.
+ * Colors from the Twenty Ten theme were used.
+ */
+
+/* background color for entry page-nav and caption boxes*/
+#content .wp-caption,
+.page-link a:link,
+.page-link a:visited,
+.home .sticky .page-link a {
+	background: #F1F1F1;	
+}
+/* background color for comment boxes */
+.commentlist .comment {
+	background: #F1F1F1;
+}
+/* background color for even depth comments */
+.commentlist .depth-2,
+.commentlist .depth-4 {
+	background: #F2F7FC;
+}
+/* background color for footer widget boxes */
+#footer-widget-area aside#first>ul,
+#footer-widget-area aside#second>ul,
+#footer-widget-area aside#third>ul,
+#footer-widget-area aside#fourth>ul {
+	background: #F2F7FC;	
+}
+/* background color for sticky posts and author boxes */
+.home .sticky,
+#entry-author-info,
+#content tr.odd td,
+.commentlist .bypostauthor {
+	background: #D9E8F7;
+	border:none;		
+}
+
+/* END BASELINE COLORS USING TWENTY TEN COLORS */
+
+
+/* CUSTOM STRUCTURE: */
+
+/* general */
+
+/* control space around the wrapper */
+#wrapper {
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/* get rid of that footer border */
+#colophon {
+	border:none;
+}
+/* hide header and footer info */
+#site-title,
+#site-description,
+#site-info,
+#site-generator {
+	display:none;
+}
+/* space between the top of header content and the wrapper */
+header {
+	padding-top:20px;
+}
+/* allows drop down menus to be visible! */
+#masthead {
+	overflow:visible;
+}
+
+/* banner */
+
+/* soft corners and shadow for the branding image (combines with nav to make a complete box) */
+#branding {	
+	border:none;	
+	clear: both;
+	display: block;
+	background:#000;
+	border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	box-shadow: 2px -2px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px -2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px -2px 2px rgba(0,0,0,0.1);	
+}
+#branding img {
+	border:none;
+	padding:0;
+	margin:0 auto;
+	height: inherit;
+}
+
+/* nav */
+
+/* soft corners and shadow for the nav (combines with branding image to create complete box) */
+#access {	
+	border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);	
+}
+
+/* content */
+
+/* fix right margin for sticky posts */
+.home .sticky {
+	border:none; /* get rid of that top border */
+	margin-right:0;
+}
+/* don't let image captions get too big for the layout! */
+#content figure img {
+	max-width: 98%;
+}
+figure,
+figure.alignleft,
+figure.alignrigt,
+figure.aligncenter,
+figure.alignnone {	
+	max-width: 100%;
+}
+/* space between rows of gallery items */
+.gallery-item {
+	padding-bottom:20px;
+}
+/* clears floated content inside entry paragraphs */
+.entry-title,
+.entry-content p {	
+	overflow:hidden;
+}
+/* keeps unformated text from breaking layout */
+pre {	
+	overflow:hidden;
+}
+
+/* comments */
+
+/* gets the avatar off the left edge of the comment box */
+.commentlist .comment .avatar {	
+	left: 4px;
+}
+/* keep the nested comments out of the bottom right corner */
+.commentlist .children {	
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+/* space between the nested comments */
+.commentlist .children li {
+	margin-bottom:20px;
+}
+/* keep the content off the right edge of a comments box */
+.comment-body {
+	margin-right:20px;	
+}
+/* keeps the last comment in a nested set from having a double spaced bottom margin */
+.commentlist .children li:last-child {
+	margin-bottom:0px;
+}
+
+/* widgets */
+
+/* space between the right side of primary and secondary widget area and wrapper */
+#primary>ul, #secondary>ul {
+	margin-right:20px;
+}
+
+/* footer */
+
+/* breathing room for content inside footer widget boxes */
+#footer-widget-area aside#first>ul,
+#footer-widget-area aside#second>ul,
+#footer-widget-area aside#third>ul,
+#footer-widget-area aside#fourth>ul {	
+	padding:8px;
+}
+/* space between the right side of fourth footer widget area and wrapper */
+#footer-widget-area aside#fourth>ul {	
+	margin-right:40px;
+}
+
+/* boxes */
+
+/* a box with: subtle corners and shadow */
+#wrapper,
+#content embed ,
+#content .wp-post-image,
+.avatar,
+#content .attachment img,
+#content .gallery-icon img,
+figure,
+.home .sticky,
+#entry-author-info,
+#content tr.odd td,
+.commentlist .comment,
+#footer-widget-area aside#first>ul,
+#footer-widget-area aside#second>ul,
+#footer-widget-area aside#third>ul,
+#footer-widget-area aside#fourth>ul {	
+	overflow:hidden;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);	
+}
+
+/* a box with: subtle shadow */
+#content .wp-caption,
+.page-link a:link,
+.page-link a:visited,
+.home .sticky .page-link a {	
+	overflow:hidden;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+/* a box with: inset shadow */
+#author-avatar,
+.home #content .category-asides,
+.archive #content .category-asides {	
+	overflow:hidden;	
+	box-shadow: inset 5px 5px 50px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 5px 5px 50px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 5px 5px 50px rgba(0,0,0,0.1);
+	padding: 6px 18px 18px 18px;
+	margin-right:20px;		
+}
+
+/* END CUSTOM STRUCTURE */
+
+/* CUSTOM TYPOGRAPHY: */
+
+body {-webkit-text-size-adjust: none;		/* Stops the iPhone scaling type up */}
+
+/* small */
+body,
+input,
+textarea,
+.navigation,
+#comments .pingback p,
+#cancel-comment-reply-link,
+#respond .form-allowed-tags,
+#entry-author-info,
+.home #content .category-asides p,
+#content pre,
+#content kbd,
+#content tt,
+#content var,
+.comment-meta,
+.entry-content sup,
+.entry-content sub,
+#respond .form-allowed-tags code,
+.widget-area .entry-meta,
+#wp-calendar thead,
+#content tr th,
+#content thead th,
+.entry-meta,
+.entry-content label,
+.entry-utility,
+#content .wp-caption p.wp-caption-text,
+.comment-meta,
+.reply,
+#respond label,
+#access .menu-header,
+div.menu,
+#content code,
+#comments .pingback .url,
+.page-title,
+#respond .form-submit input,
+#wp-calendar caption,
+#content figure figcaption {	
+	font-size: 14px;
+	line-height: 24px;	
+}
+/* medium */
+#content,
+#content input,
+#content textarea,
+.commentlist li.comment,
+.page-title span {	
+	font-size: 18px;
+	line-height: 24px;
+}
+/* large */
+#content .entry-title,
+h3#comments-title,
+h3#reply-title {	
+	font-size: 22px;	
+	line-height: 24px;	
+}
+/* specials */
+#entry-author-info h2 {	
+	font-size: 100%;	
+}
+big,
+.attachment .entry-content .entry-caption {
+	font-size: 140%;	
+}
+pre,
+#content .wp-caption,
+#content figure {	
+	line-height: 18px;	
+}
+#access a {	
+	line-height: 38px;	
+}
+sub {	
+	line-height: 1;	
+}
+#access ul ul a,
+.form-allowed-tags {	
+	line-height: 1em;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#wp_tag_cloud div {	
+	line-height: 1.5em;	
+}
+
+/* menu */
+
+#access .menu-header,
+div.menu {
+	font-weight: bold;
+}
+
+/* content */
+
+.home #content .category-asides,
+.archive #content .category-asides {
+	font-style: italic;		
+}
+
+/* END CUSTOM TYPOGRAPHY */
+
+/* CUSTOM FONTS: *~/
+
+Delete this sentence and the ~ in the comment above,
+then add your custom font styles here.
+
+/* END CUSTOM FONTS */
+
+/* CUSTOM COLORS: *~/
+
+Delete this sentence and the ~ in the comment above,
+then add your custom color styles here.
+
+/* END CUSTOM COLORS */
+
+/* MEDIA QUERIES: */
+
+/* for screens with a width smaller than 1140px */
+@media only screen
+	and (max-width:1140px) {
+
+	/* remove the top and bottom margins of the wrapper */
+	#wrapper {
+		margin-top:0;
+		margin-bottom:0;
+	}
+	/* remove space at the top of header content */
+	header {
+		padding-top:0;
+	}
+	/* remove right margin of fourth footer widget */
+	#footer-widget-area aside#fourth>ul {	
+		margin-right:0px;
+	}
+
+}
+
+/* for screens with a width equal to or smaller than 940px */
+@media only screen
+	and (max-width:940px) {
+
+	/* Collapse 1140 grid to single column */
+	#wrapper, header, #masthead, nav#access, #main, #footer-widget-area, .row, .body, .container {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#branding, #container, #primary, #secondary, #footer-widget-area aside#first, #footer-widget-area aside#second, #footer-widget-area aside#third, #footer-widget-area aside#fourth, .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+/**
+ * for screens with a device pixel ratio of 1.5 or higher in portrait mode
+ * OR a device with a width equal to or less than 480px
+ */
+@media only screen	
+	and (-webkit-min-device-pixel-ratio:1.5)
+	and (orientation:portrait),
+only screen
+	and (max-device-width:480px) {
+
+	/* DOUBLE font sizes and line heights */
+	
+	/* small */
+	body,
+	input,
+	textarea,
+	.navigation,
+	#comments .pingback p,
+	#cancel-comment-reply-link,
+	#respond .form-allowed-tags,
+	#entry-author-info,
+	.home #content .category-asides p,
+	#content pre,
+	#content kbd,
+	#content tt,
+	#content var,
+	.comment-meta,
+	.entry-content sup,
+	.entry-content sub,
+	#respond .form-allowed-tags code,
+	.widget-area .entry-meta,
+	#wp-calendar thead,
+	#content tr th,
+	#content thead th,
+	.entry-meta,
+	.entry-content label,
+	.entry-utility,
+	#content .wp-caption p.wp-caption-text,
+	.comment-meta,
+	.reply,
+	#respond label,
+	#access .menu-header,
+	div.menu,
+	#content code,
+	#comments .pingback .url,
+	.page-title,
+	#respond .form-submit input,
+	#wp-calendar caption,
+	#content figure figcaption,
+	.commentlist li.comment {	
+		font-size: 28px;
+		line-height: 48px;	
+	}
+	/* medium */
+	#content,
+	#content input,
+	#content textarea,
+	.page-title span,
+	.commentlist li.comment p {	
+		font-size: 36px;
+		line-height: 48px;
+	}
+	/* large */
+	#content .entry-title,
+	h3#comments-title,
+	h3#reply-title {	
+		font-size: 44px;	
+		line-height: 48px;	
+	}
+	/* specials */
+	pre,
+	#content .wp-caption,
+	#content figure {	
+		line-height: 36px;	
+	}
+	#access a {	
+		line-height: 76px;	
+	}
+	
+}
+
+/* END MEDIA QUERIES */
