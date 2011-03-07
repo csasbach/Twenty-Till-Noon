@@ -2,12 +2,11 @@
 /** 
  * functions.php
  * 
- * This file includes a change to $content_width, a stub for theme set up and a fix for
- * the alignments of Twenty Ten Five image captions.
+ * This file includes a stub for theme set up and a fix for
+ * the alignments of Twenty Ten Five captioned images.
  * 
  * delete ~ to uncomment blocks!
  * 
- * @since Twenty Ten 5.r 0.0
  */
 
 /* SET UP  *~/
