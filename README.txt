@@ -48,6 +48,12 @@ Documentation:
 	screenshot.png
 	
 		WordPress uses this image on the Add Themes page of your WordPress admin panel.
+		
+Known Issues:
+
+	The path in the @import directive on line 13 of style.css must match the name of the directory your
+	Twenty Ten Five theme is in. If they do not match, change the path in the directive to match the name
+	of your	Twenty Ten Five directory.
 
 Contact:
 
