@@ -301,6 +301,9 @@ header {
 	margin-right:0;
 }
 /* don't let image captions get too big for the layout! */
+#content img {
+	max-width:100%;
+}
 #content figure img {
 	max-width: 98%;
 }
