@@ -598,10 +598,7 @@ then add your custom color styles here.
  * OR a device with a width equal to or less than 480px
  */
 @media only screen	
-	and (-webkit-min-device-pixel-ratio:1.5)
-	and (orientation:portrait),
-only screen
-	and (max-device-width:480px) {
+	and (-webkit-min-device-pixel-ratio:1.5) {
 
 	/* DOUBLE font sizes and line heights */
 	
@@ -643,8 +640,8 @@ only screen
 	#wp-calendar caption,
 	#content figure figcaption,
 	.commentlist li.comment {	
-		font-size: 28px;
-		line-height: 48px;	
+		font-size: 21px;
+		line-height: 36px;	
 	}
 	/* medium */
 	#content,
@@ -652,24 +649,24 @@ only screen
 	#content textarea,
 	.page-title span,
 	.commentlist li.comment p {	
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 27px;
+		line-height: 36px;
 	}
 	/* large */
 	#content .entry-title,
 	h3#comments-title,
 	h3#reply-title {	
-		font-size: 44px;	
-		line-height: 48px;	
+		font-size: 33px;	
+		line-height: 36px;	
 	}
 	/* specials */
 	pre,
 	#content .wp-caption,
 	#content figure {	
-		line-height: 36px;	
+		line-height: 27px;	
 	}
 	#access a {	
-		line-height: 76px;	
+		line-height: 57px;	
 	}
 	
 }

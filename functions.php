@@ -20,6 +20,17 @@ function twenty_till_noon_setup(){
 
 /* END SET UP */
 
+/* VIEWPORT META TAG: */
+
+function viewport_meta_tag() {
+	?>
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" >
+	<?php
+}
+add_filter('wp_head','viewport_meta_tag');
+
+/* END VIEWPORT META TAG */
+
 /* FIX TWENTY TEN FIVE CAPTION IMAGE ALIGNMENTS */
 
 /**
