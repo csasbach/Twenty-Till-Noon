@@ -90,7 +90,7 @@ padding-right: 20px;
 #main,
 #footer-widget-area {
 width: 100%;
-max-width: 1140px;
+max-width: max-width: 81.4em; /* em = 1140px / the font size in the 'small' section below */
 margin: 0 auto;
 overflow: hidden;
 }
