@@ -427,8 +427,6 @@ figure,
 
 /* CUSTOM TYPOGRAPHY: */
 
-body {-webkit-text-size-adjust: none;		/* Stops the iPhone scaling type up */}
-
 /* small */
 body,
 input,
